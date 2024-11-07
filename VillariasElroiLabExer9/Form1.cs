@@ -274,7 +274,6 @@ namespace VillariasElroiLabExer9
 
         private String getImageValue(string value)
         {
-            string projectDirectory = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.FullName;
             string imagePath = "null";
 
             switch (value)
@@ -282,52 +281,52 @@ namespace VillariasElroiLabExer9
                 //top transition
 
                 case "top":
-                    imagePath = Path.Combine(projectDirectory, "signals", "top", "top.png");
+                    imagePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "signals", "top", "top.png");
                     break;
                 case "top-mid":
-                    imagePath = Path.Combine(projectDirectory, "signals", "top", "top-mid.png");
+                    imagePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "signals", "top", "top-mid.png");
                     break;
                 case "top-bot":
-                    imagePath = Path.Combine(projectDirectory, "signals", "top", "top-bot.png");
+                    imagePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "signals", "top", "top-bot.png");
                     break;
 
                 //middle transition
 
                 case "mid":
-                    imagePath = Path.Combine(projectDirectory, "signals", "middle", "mid.png");
+                    imagePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "signals", "middle", "mid.png");
                     break;
                 case "mid-top":
-                    imagePath = Path.Combine(projectDirectory, "signals", "middle", "mid-top.png");
+                    imagePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "signals", "middle", "mid-top.png");
                     break;
                 case "mid-bot":
-                    imagePath = Path.Combine(projectDirectory, "signals", "middle", "mid-bot.png");
+                    imagePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "signals", "middle", "mid-bot.png");
                     break;
 
                 //bottom transition
 
                 case "bot":
-                    imagePath = Path.Combine(projectDirectory, "signals", "bottom", "bot.png");
+                    imagePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "signals", "bottom", "bot.png");
                     break;
                 case "bot-mid":
-                    imagePath = Path.Combine(projectDirectory, "signals", "bottom", "bot-mid.png");
+                    imagePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "signals", "bottom", "bot-mid.png");
                     break;
                 case "bot-top":
-                    imagePath = Path.Combine(projectDirectory, "signals", "bottom", "bot-top.png");
+                    imagePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "signals", "bottom", "bot-top.png");
                     break;
 
                 //manchester transition
 
                 case "m-top-bot":
-                    imagePath = Path.Combine(projectDirectory, "signals", ".manchester", "m-top-bot.png");
+                    imagePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "signals", "manchester", "m-top-bot.png");
                     break;
                 case "m-bot-top":
-                    imagePath = Path.Combine(projectDirectory, "signals", ".manchester", "m-bot-top.png");
+                    imagePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "signals", "manchester", "m-bot-top.png");
                     break;
                 case "m-bot-top-bot":
-                    imagePath = Path.Combine(projectDirectory, "signals", ".manchester", "m-bot-top-bot.png");
+                    imagePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "signals", "manchester", "m-bot-top-bot.png");
                     break;
                 case "m-top-bot-top":
-                    imagePath = Path.Combine(projectDirectory, "signals", ".manchester", "m-top-bot-top.png");
+                    imagePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "signals", "manchester", "m-top-bot-top.png");
                     break;
 
             }
